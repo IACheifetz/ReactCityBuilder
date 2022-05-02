@@ -5,8 +5,8 @@ export default function CityNameInput(props) {
     <section>
       What is your city name?
       {/* this component should have a prop called setCityName, which is a function */}
+      <input onChange={(e) => props.setCityName(e.target.value)} />
       {/* on change, this component should use e.target.value to pass the correct id to the setCityName function */}
-      <input />
     </section>
   );
 }
